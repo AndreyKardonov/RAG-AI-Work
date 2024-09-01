@@ -4,7 +4,7 @@ import json
 #@st.cache_resource
 def initVariables():
     if "settings_file" not in st.session_state:
-        st.session_state.settings_file = "c:/ai/settings.json"
+        st.session_state.settings_file = "c:/ai/work/settings.json"
     if "current_model" not in st.session_state:
         st.session_state.current_model = ""
     if "current_model_path" not in st.session_state:
