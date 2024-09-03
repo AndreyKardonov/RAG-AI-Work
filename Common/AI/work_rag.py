@@ -99,7 +99,6 @@ def getRAGAnswer(model, question, collection, SentenceModel, temperature, number
         return prompt, ""
     else:
     # Отправка промпта модели и получение ответа
-        logging.info(f"Prompt:{prompt}")
         completion  =  model.create_chat_completion(
             messages=[ {"role": "user", "content": prompt} ],
             temperature=temperature,
